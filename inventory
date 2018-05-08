@@ -1,0 +1,16 @@
+acs ansible_ssh_host=10.76.118.129 ansible_ssh_user=root ansible_ssh_pass=root
+10.76.118.129 ansible_ssh_host=10.76.118.129 ansible_ssh_user=root ansible_ssh_pass=root username=root
+10.76.118.129  ansible_ssh_host=10.76.118.129
+[webservers]
+10.76.118.129
+
+[dbservers]
+10.76.118.129
+
+[datacenter:children]
+webservers
+dbservers
+
+[datacenter:vars]
+
+

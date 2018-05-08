@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  roles:
+  - server-common
+  - geerlingguy.git
+  sudo: yes
