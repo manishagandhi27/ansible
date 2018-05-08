@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  vars: 
+   companyname: Verizon
+   file: path=/opt/verizon.txt state=touch
+   when:
+      - ansible_distribution == "CentOS"

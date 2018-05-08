@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Ansible register with_items example
+    yum: pkg={{ item }} state=installed
+    with_items:
+     - git
+     - ntp
+     - vim
